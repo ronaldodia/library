@@ -1,0 +1,11 @@
+part of biblio_mngt;
+
+// http://www.json.org/
+// http://jsonformatter.curiousconcept.com/
+
+// lib/biblio/mngt/json/model.dart
+
+var biblioMngtModelJson = r'''
+{"width":990,"height":580,"boxes":[{"name":"Article","entry":true,"x":287,"y":45,"width":120,"height":120,"items":[{"sequence":10,"name":"code","category":"identifier","type":"String","init":"","essential":false,"sensitive":false},{"sequence":20,"name":"title","category":"required","type":"String","init":"","essential":true,"sensitive":true},{"sequence":30,"name":"author","category":"required","type":"String","init":"","essential":true,"sensitive":false},{"sequence":40,"name":"category","category":"required","type":"String","init":"","essential":true,"sensitive":true},{"sequence":50,"name":"quantity","category":"attribute","type":"int","init":"","essential":false,"sensitive":false}]},{"name":"User","entry":true,"x":287,"y":237,"width":120,"height":120,"items":[{"sequence":20,"name":"email","category":"identifier","type":"String","init":"","essential":true,"sensitive":false},{"sequence":30,"name":"firstName","category":"required","type":"String","init":"","essential":false,"sensitive":false},{"sequence":40,"name":"lastName","category":"required","type":"String","init":"","essential":true,"sensitive":false},{"sequence":50,"name":"phone","category":"attribute","type":"String","init":"","essential":false,"sensitive":false},{"sequence":60,"name":"privlege","category":"required","type":"String","init":"guest","essential":false,"sensitive":false}]},{"name":"Borrowing","entry":false,"x":686,"y":42,"width":120,"height":120,"items":[{"sequence":10,"name":"borrowingDate","category":"required","type":"DateTime","init":"","essential":false,"sensitive":false},{"sequence":20,"name":"returnDate","category":"required","type":"DateTime","init":"","essential":false,"sensitive":false}]}],"lines":[{"box1Name":"Article","box2Name":"Borrowing","category":"relationship","internal":true,"box1box2Name":"borrowing","box1box2Min":"0","box1box2Max":"N","box1box2Id":false,"box2box1Name":"article","box2box1Min":"1","box2box1Max":"1","box2box1Id":false},{"box1Name":"Borrowing","box2Name":"User","category":"relationship","internal":false,"box1box2Name":"user","box1box2Min":"1","box1box2Max":"1","box1box2Id":false,"box2box1Name":"borrowing","box2box1Min":"0","box2box1Max":"N","box2box1Id":false}]}
+''';
+  
